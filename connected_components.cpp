@@ -54,7 +54,7 @@ public:
 
       // TODO: implement the find function
     unsigned int find(unsigned int v) {
-        if(vec[v] == v) {
+        if(vec[v] == (int)v) {
             return v;
         }
         vec[v] = find(vec[v]);
