@@ -43,7 +43,7 @@ public:
         this->V = V;
         this->E = E;
         vec.resize(V);
-        for(int i = 0; i < vec.size(); ++i) {
+        for(int i = 0; i < (int)vec.size(); ++i) {
             vec[i] = i;
         }
         
@@ -92,7 +92,7 @@ public:
             set_union(first, second);
         }
         unsigned int count = 0;
-        for(int i = 0; i < vec.size(); ++i) {
+        for(int i = 0; i < (int)vec.size(); ++i) {
             if(vec[i] == i) {
                 ++count;
             }
